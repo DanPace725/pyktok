@@ -27,7 +27,7 @@ from selenium.webdriver.firefox.service import Service as FirefoxService
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 from webdriver_manager.chrome import ChromeDriverManager
-from webdriver_manager.core.utils import ChromeType
+#from webdriver_manager.core.utils import ChromeType
 from webdriver_manager.firefox import GeckoDriverManager
 
 headers = {'Accept-Encoding': 'gzip, deflate, sdch',
@@ -269,18 +269,11 @@ def save_visible_comments(video_url,
     f_options = FirefoxOptions()
     f_options.add_argument("--headless")
     if browser == 'chromium':
-        driver = webdriver.Chrome(service=ChromeiumService(
-                                          ChromeDriverManager(
-                                          chrome_type=ChromeType.CHROMIUM).install()),
-                                  options=c_options)
+        driver = webdriver.Chrome(otions=c_options)
     elif browser == 'chrome':
-        driver = webdriver.Chrome(service=ChromeiumService(
-                                          ChromeDriverManager().install()),
-                                  options=c_options)
+        driver = webdriver.Chrome(options=c_options)
     elif browser == 'firefox':
-        driver = webdriver.Firefox(service=FirefoxService(
-                                           GeckoDriverManager().install()),
-                                   options=f_options)
+        driver = webdriver.Firefox(options=f_options)
     driver.get(video_url)
     try:
         wait = WebDriverWait(driver,10)
