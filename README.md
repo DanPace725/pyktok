@@ -1,4 +1,4 @@
-**Sept 13, 2023: Due to an update with webdriver manager, certain elemnts were breaking the library. I modified the code to restore the download and save functionality. The code in question was related to saving comments so I'm not sure if that function works or not at this point. 
+**Sept 13, 2023: Due to an update with webdriver manager, certain elemnts were breaking the library. I modified the code to restore the download and save functionality. The code in question was related to saving comments so I'm not sure if that function works or not at this point.**
 
 **March 16, 2023: Video downloading works again; comment downloading is still broken.** 
 
