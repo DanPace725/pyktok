@@ -1,3 +1,5 @@
+**Sept 13, 2023: Due to an update with webdriver manager, certain elemnts were breaking the library. I modified the code to restore the download and save functionality. The code in question was related to saving comments so I'm not sure if that function works or not at this point. 
+
 **March 16, 2023: Video downloading works again; comment downloading is still broken.** 
 
 **Unfortunately Pyktok's video and comment downloading functions are broken as of Feb 10, 2023. Downloading of metadata still works. If you know anything about web scraping, help us out on the Issues page. Thanks!**
